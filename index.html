@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>IMC</title>
+</head>
+<body>
+    
+    <section>
+        <h1>Calcule IMC</h1>
+        <article>
+            <h3>IMC</h3>
+            <p>Menos do que 18,5</p>
+            <p>Entre 18,5 e 24,9</p>
+            <p>Entre 25 e 29,9</p>
+            <p>Entre 30 e 34,9</p>
+            <p>Entre 35 e 39,9</p>
+            <p>Mais do que 40</p>
+            <h3>Resultado</h3>
+            <p>Abaixo do peso</p>
+            <p>Peso normal</p>
+            <p>Sobrepeso</p>
+            <p>Obesidade grau 1</p>
+            <p>Obesidade grau 2</p>
+            <p>Obesidade grau 3</p>
+        </article>
+        <h3>Calcule seu IMC</h3>
+        <form action="/" id="form" method="post">
+            <p><label for="ipeso">Peso:</label></p>
+            <input type="number" name="peso" id="ipeso" placeholder="(Ex: 50.5)" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" autocomplete="off">
+            <p><label for="ialtura">Altura:</label></p>
+            <input type="number" name="altura" id="ialtura" placeholder="(Ex: 1.70)" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" autocomplete="off"> <br>
+            <input id="botao" type="submit" value="Calcular">
+        </form>
+        <div id="res"></div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
