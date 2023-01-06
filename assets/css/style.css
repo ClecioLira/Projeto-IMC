@@ -80,3 +80,13 @@ form >input#botao:hover {
     border-radius: 20px;
     text-align: center;
 }
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+
+}
+footer > a {
+    color: white;
+    text-decoration: none;
+}
